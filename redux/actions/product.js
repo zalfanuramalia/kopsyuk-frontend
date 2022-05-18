@@ -3,7 +3,7 @@ import http from '../../helpers/http'
 export const getProduct = async (dispatch) => {
     try {
         dispatch({type: 'TOGGLE_LOADING_TRUE'})        
-        const {data} = await http().get('/product')
+        const {data} = await http().get('/product?limit=50')
         dispatch({type: 'GET_PRODUCT', payload: data.results})
         dispatch({type: 'TOGGLE_LOADING_FALSE'})   
     } catch (e){
