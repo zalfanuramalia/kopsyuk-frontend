@@ -1,0 +1,76 @@
+.contain {
+    margin-top: 124px;
+}
+
+.border {
+    border-bottom: 1px solid black;
+}
+
+.layout a {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.formSearch {
+    display: none;
+    outline: none;
+    border: none;
+}
+
+.notif {
+    width: 26px;
+    height: 26px;
+    right: -7px;
+    top: -14px;
+    color: rgb(0, 0, 0) !important;
+}
+
+.button {
+    background-color: wheat;
+    border: none;
+    font-size: 16px;
+    color: #062C30;
+}
+
+.button:hover {
+    background-color: #D0C8BA;
+    color: #062C30;
+}
+
+.button:focus {
+    background-color: #D0C8BA;
+    color: #062C30;
+}
+
+.pages {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 40px;
+    width: 190px;
+    height: 300px;
+    line-height: 57px;
+}
+
+.shop {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 40px;
+    width: 220px;
+    height: 250px;
+    line-height: 32px;
+}
+
+.menu {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 30px;
+    width: 130px;
+    height: 290px;
+    line-height: 57px;
+}
+
+@media all and (max-width: 992px) {
+    .formSearch {
+        width: 100% !important;
+    }
+}
