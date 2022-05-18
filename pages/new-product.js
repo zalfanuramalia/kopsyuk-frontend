@@ -62,7 +62,7 @@ const NewProduct = () => {
             </Head>
             <div className='bg-product bg-gray-100 h-full'>
                 <div style={{ fontSize: "20px", fontFamily: "Rubik" }} className="text-justify p-auto px-5 mx-5 py-3 nav-text">
-                <span >Favorite & Promo {""}</span><span className="text-yellow-800"> {">"} Cold Brew</span>
+                <span >Favorite & Promo {""}</span><span className="text-yellow-800"> {">"} New Product</span>
                 </div>
                 <Container>
                 <form onSubmit={(e) => addDataProduct(e)}>

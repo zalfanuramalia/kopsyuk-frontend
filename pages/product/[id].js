@@ -75,7 +75,6 @@ const ProductDetail = () => {
                                 <p className="text-center text-xl font-medium"><NumberFormat value={product.detail?.price} displayType={'text'} thousandSeparator={'.'} decimalSeparator={','} prefix={'IDR '} ></NumberFormat></p>
                             </div>
                             <div className="text-center">
-                                <Button block variant='pallet-2 radius'> Add to Cart </Button>
                                 <Button onClick={goEdit} block variant='pallet-3 my-2 radius'> Edit Product </Button>
                                 <Button onClick={handleDelete} block variant='pallet-1 radius'> Delete Menu </Button>
                                 <Modals show={modalShow} onHide={() => setModalShow(false)} />
