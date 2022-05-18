@@ -75,7 +75,7 @@ const NewProduct = () => {
                         <div className="d-flex flex-column align-items-center">
                             <Image id='product-image' name='product-image' src={EmptyInputImage} alt="product" className='img-fluid' width={200} height={200} />
                         </div>
-                        <div className='my-2 d-flex flex-row align-items-center justify-content-center '>
+                        <div className='my-2  d-flex flex-row align-items-center justify-content-center '>
                             <Button block variant='pallet-2 radius save-1'> Take a Picture </Button>
                         </div>
                         <div className='my-2 d-flex flex-row align-items-center justify-content-center'>
@@ -98,12 +98,16 @@ const NewProduct = () => {
                             <Col xl={12} className="mt-3">
                                 <InputUnderline label="Price :" name='price' placeholder="Type the price" block version="input-underline px-3 py-4 underline" ></InputUnderline>
                             </Col>
-                            <Col xl={12} className="mt-3">
+                            <Col xl={12} className="mt-3 ">
                                 <InputUnderline label="Stock :" name='stock' placeholder="Stock product" block version="input-underline px-3 py-4 underline" ></InputUnderline>
                             </Col>
                             <Col xl={12} className="ml-20 mt-10 space-y-5 d-flex flex-row justify-content-center align-items-center mx-3">
-                                <Button onClick={()=>setModalShow(true)} type='submit' block variant='pallet-2 my-4 radius save-1'> Save Product </Button>
-                                <Button block variant='pallet-3 my-2 mx-5 radius save-1'> <Link href="/product"><a className={`${styles.cancel}`}>Cancel</a></Link> </Button>
+                                <div className='mx-3 my-3'>
+                                    <Button onClick={()=>setModalShow(true)} type='submit' block variant='pallet-2 my-4 radius save-1'> Save Product </Button>
+                                </div>
+                                <div className='mx-3 my-3'>
+                                    <Button block variant='pallet-3 my-2 mx-5 radius save-1'> <Link href="/product"><a className={`${styles.cancel}`}>Cancel</a></Link> </Button>
+                                </div>
                             </Col>
                         </Row>
                         </Container>

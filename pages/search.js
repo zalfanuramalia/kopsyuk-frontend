@@ -1,25 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col, Tabs, Tab } from 'react-bootstrap'
 import empty from '../public/images/empty-input-image.png'
-import NavbarHome from '../components/NavbarHome'
 import Footer from '../components/Footer'
 import CardMenu from '../components/CardMenu'
-import { connect } from 'react-redux'
-import { useNavigate, useSearchParams } from 'react-router-dom'
-import Button from '../components/Button'
 import { FaSearch, FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 import http from '../helpers/http'
 import Layout from '../components/Layout'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 const Search = () => {
     const [product, setProduct] = useState([])
     const [page, setPage] = useState({})
-    // const dataa = Array.from(product)
     const [errorMsg, setErrorMsg] = useState(null)
-    // const navigate = useNavigate()
     const router = useRouter()
-    // let [searchParams, setSearchParams] = useSearchParams();
     useEffect(() => {
         getProductSearch(`/product?limit=6`)
     }, [])
@@ -68,6 +62,11 @@ const Search = () => {
     
     return (
         <Layout>
+            <Head>
+                <title>Home</title>
+                <meta name="description" content="Next Coffee for You" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <section>
                 <Container>
                     <Row className='mb-5'>
@@ -126,7 +125,6 @@ const Search = () => {
                     </Row>
                 </Container>
             </section>
-            <Footer />
         </Layout>
     )
 }

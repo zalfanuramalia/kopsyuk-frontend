@@ -67,14 +67,14 @@ const ProductDetail = () => {
                     </div>
                     <Row className='px-3 justify-content-md-between'>
                         <Col xl={5} sm={12} className="px-5 d-flex flex-column justify-content-center">
-                            <div>
+                            <div className="text-center">
                                 <Image src={product.detail?.image} alt="product-image"  className='img-fluid' />
                             </div>
                             <div style={{ fontSize: "48px", fontFamily: "Poppins" }} className="mt-5 ml-20">
                                 <p className="text-center text-4xl font-bold">{product.detail?.name}</p>
                                 <p className="text-center text-xl font-medium"><NumberFormat value={product.detail?.price} displayType={'text'} thousandSeparator={'.'} decimalSeparator={','} prefix={'IDR '} ></NumberFormat></p>
                             </div>
-                            <div className="ml-20 mt-10 space-y-5">
+                            <div className="text-center">
                                 <Button block variant='pallet-2 radius'> Add to Cart </Button>
                                 <Button onClick={goEdit} block variant='pallet-3 my-2 radius'> Edit Product </Button>
                                 <Button onClick={handleDelete} block variant='pallet-1 radius'> Delete Menu </Button>
@@ -86,7 +86,7 @@ const ProductDetail = () => {
                             <Container>
                                 <Card style={{ fontSize: "24px", fontFamily: "Poppins" }} className='text-center position-relative shadow-lg border border-top-0 border-start-0 border-end-0 border-5 border-bottom mx-5 px-5 radius'>
                                     <Card.Text className='mt-5'>
-                                        Delivery only on Monday to friday at {product.product?.delivery_hour_start} - {product.product?.delivery_hour_end} pm
+                                        Delivery only on Monday to friday at 7 am - 10 pm
                                     </Card.Text>
                                     <br />
                                     <Card.Text>
@@ -118,7 +118,7 @@ const ProductDetail = () => {
                                 </div>
                                 <div className="d-flex justify-content-md-center align-items-left">
                                     <p className='mt-3'>Set Time: </p>
-                                    <InputUnderline block version="input-underline underline" placeholder='Enter the Time you arrived'></InputUnderline>
+                                    <InputUnderline block version="input-underline underline px-3" placeholder='Enter the Time you arrived'></InputUnderline>
                                 </div>
                             </Container>
                         </Col>
