@@ -68,7 +68,7 @@ const ProductDetail = () => {
                     <Row className='px-3 justify-content-md-between'>
                         <Col xl={5} sm={12} className="px-5 d-flex flex-column justify-content-center">
                             <div>
-                                <Image src={empty || product.detail?.image} alt="product-image"  className='img-fluid' />
+                                <Image src={product.detail?.image} alt="product-image"  className='img-fluid' />
                             </div>
                             <div style={{ fontSize: "48px", fontFamily: "Poppins" }} className="mt-5 ml-20">
                                 <p className="text-center text-4xl font-bold">{product.detail?.name}</p>

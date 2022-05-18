@@ -9,6 +9,8 @@ import InputUnderline from "../components/InputUnderline"
 import { useDispatch, useSelector } from 'react-redux'
 import { addProduct } from '../redux/actions/product'
 import Modals from '../components/ModalsAdd'
+import Link from 'next/link'
+import styles from '../styles/new-product.module.scss'
 
 const NewProduct = () => {
     const {product} = useSelector(state=>state)
@@ -101,7 +103,7 @@ const NewProduct = () => {
                             </Col>
                             <Col xl={12} className="ml-20 mt-10 space-y-5 d-flex flex-row justify-content-center align-items-center mx-3">
                                 <Button onClick={()=>setModalShow(true)} type='submit' block variant='pallet-2 my-4 radius save-1'> Save Product </Button>
-                                <Button block variant='pallet-3 my-2 mx-5 radius save-1'> Cancel </Button>
+                                <Button block variant='pallet-3 my-2 mx-5 radius save-1'> <Link href="/product"><a className={`${styles.cancel}`}>Cancel</a></Link> </Button>
                             </Col>
                         </Row>
                         </Container>
