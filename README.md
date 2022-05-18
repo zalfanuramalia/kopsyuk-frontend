@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About
 
-## Getting Started
+This website is a Coffee Shop website that is useful for ordering drinks online. This website is named "Kopsyuk".
 
-First, run the development server:
+![Homepage with Search](https://user-images.githubusercontent.com/42364529/168978832-e6aa4258-4750-4bd2-979a-b7293cde2af2.jpeg)
+![Navbar to Product paages](https://user-images.githubusercontent.com/42364529/168978929-7207ec64-7a1b-443e-8013-40681ca45385.jpeg)
+![Product page](https://user-images.githubusercontent.com/42364529/168978937-436add97-8918-4e51-9c72-3aa4b47fb802.jpeg)
+![Edit Product page](https://user-images.githubusercontent.com/42364529/168978947-a8aaf170-22f5-4c27-8cb3-597dae802b66.jpeg)
+![Modal when Updated](https://user-images.githubusercontent.com/42364529/168978960-4cc8a372-e68a-4be0-a7b5-1bb8cec82487.jpeg)
 
-```bash
-npm run dev
-# or
-yarn dev
+# Getting Started
+
+1. Clone this repository
+```
+git clone https://github.com/zalfanuramalia/kopsyuk-frontend.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install module
+```
+npm i
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. configure ENV
+4. for run the project, write `nmp run dev` in terminal
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Kopsyuk
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contains the Application Programming Interface (API) using Visual Studio Code applications, Node.js as a platform, and express.js as a framework from Node.js, as well as Postman as a container to test the APIs that have been created. To build a frontend application using the framework from Next.js and to get data from the backend using axios and integration with redux-thunk, as well as Chrome as a container to test the appearance of the application.
 
-## Learn More
+# Built with
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Next.js
+* Redux-thunk
+* Chrome
