@@ -93,14 +93,6 @@ const ProductDetail = () => {
                                         Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours.
                                     </Card.Text>
                                     <br />
-                                    <Card.Text >
-                                        Choose a size
-                                    </Card.Text>
-                                    <div className="d-flex flex-row justify-content-md-center mb-5">
-                                        <SizeCard radioName={"R"} value="R" />
-                                        <SizeCard radioName={"L"} value="L" />
-                                        <SizeCard radioName={"XL"} value="XL" />
-                                    </div>
                                 </Card>
                                 <div className="mt-10 space-y-8">
                                     <p className="text-center font-bold text-lg mt-4">Choose Delivery Methods</p>

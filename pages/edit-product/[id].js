@@ -41,14 +41,14 @@ const EditProduct = () => {
         setData({
           image: e.target.files[0]
         });
-      };
+    };
     
-      const uploadFile = (e) => {
+    const uploadFile = (e) => {
         e.preventDefault()
         hiddenFileInput.current.click()
-      }
+    }
 
-      const editedProduct = (e) => {
+      const editedProduct = async (e) => {
         e.preventDefault()
         const inputData = {}
         inputData.name = e.target.elements['name'].value

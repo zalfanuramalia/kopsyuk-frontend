@@ -23,19 +23,19 @@ const NewProduct = () => {
     const fileInputHandler = (e) => {
         const reader = new FileReader();
         const image = e.target.files[0];
-
-        if (e.target.files && e.target.files[0]) {
-            setImg(URL.createObjectURL(e.target.files[0]));
-          }
     
         const productImage = document.querySelector('#product-image');
         reader.readAsDataURL(image);
     
         reader.onload = (e) => {
-        productImage.src = e.target.result;
-        productImage.className += ' rounded-circle'
+          productImage.src = e.target.result;
+          productImage.className += ' rounded-circle'
         };
-        setData({image: e.target.files[0]});
+    
+    
+        setData({
+          image: e.target.files[0]
+        });
     };
     
     const uploadFile = (e) => {
@@ -73,7 +73,7 @@ const NewProduct = () => {
                     <Row className='py-3'>
                     <Col xl={6} className="px-5 d-flex flex-column justify-content-center">
                         <div className="d-flex flex-column align-items-center">
-                            <Image id='product-image' name='product-image' src={EmptyInputImage} alt="product" className='img-fluid' width={200} height={200} />
+                            <Image id='product-image' src={EmptyInputImage} alt="product" className='img-fluid' width={200} height={200} />
                         </div>
                         <div className='my-2  d-flex flex-row align-items-center justify-content-center '>
                             <Button block variant='pallet-2 radius save-1'> Take a Picture </Button>
